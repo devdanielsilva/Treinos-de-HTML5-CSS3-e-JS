@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janela Modal</title>
+    
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!--Div com botão.-->
+    <div onclick="abrirModal()" class="btn">Clique aqui!</div>
+
+    <!--Div com a janela do modal.-->
+    <div class="janela-modal" id="janela-modal"><!--Janela Overlay-->
+        <!--Div do modal e com texto do modal. -->
+        <div class="modal">
+            <!--Div com botão para fechar o modal.-->
+            <button class="fechar" id="fechar">X</button>
+            <!--Título do modal-->
+            <h1>Janela Modal</h1>
+            <!--Parágrafo com texto do modal-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo hic sint veniam, dolores doloremque, deleniti eveniet, sit doloribus beatae consectetur expedita voluptatem dolor amet? Dolores commodi totam animi qui voluptatem!</p>
+        </div>
+    </div>
+
+    <!--Arquivo JS-->
+    <script src="JS/modal.js"></script>
+</body>
+</html>
