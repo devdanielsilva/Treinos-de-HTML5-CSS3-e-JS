@@ -26,7 +26,10 @@ Serve para chamar a função de click, para quando houver o click no botão do m
 
 ## Informações sobre o documento JS
 * Tem função para abrir o modal ao apertar o botão.
-* Variável do const (Constante). A Variável constante não tem possibilidade de alteração, e irá receber o **ID** da **janela modal** que por sua vez, possuí a **div modal** dentro dela tem o **título** e o **parágrafo de texto**.
+* Variável do const (Constante). A Variável constante não tem possibilidade de alteração.<br> 
+E ela irá receber o **ID** da **janela modal** que por sua vez, possuí a **div modal** dentro dela tem o **título** e o **parágrafo de texto**. <br>
+Dentro da **função** chamaremos a variável que definimos junto de **.classList** que serve podemos trabalhar adicionando e removendo classes no nosso modal.<br>
+E como queremos abrir o nosso modal, iremos adicionar uma **classe dinâmicamente**, através do **modal.class.add('Aqui dentro vai o nome da classe que irá representar a abertura do modal. EX: abrir')**
 * Evento do tipo **Listener "click"** .
 * Estrutura condicional do tipo **if & else**.
 <br>
