@@ -4,7 +4,8 @@
 
 ## Informações sobre o documento HTML
 ### Possuí 3 Div's 
-* Div do botão para abrir a janela modal.
+* Div do botão para abrir a janela modal. No início da div adicionamos **onclick="abrirModal()"** pode ser antes da class="btn". <br> 
+Serve para chamar a função de click, para quando houver o click no botão do modal.
 * Div da janela modal.
 * Dentro da div da janela modal, que tem uma div para o modal com o botão de fechamento do modal, o título, o parágrafo de texto.<br>
 
