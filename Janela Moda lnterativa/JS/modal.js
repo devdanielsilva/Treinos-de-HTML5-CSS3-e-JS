@@ -8,6 +8,7 @@ function abrirModal() {
 
   /*Evento de click no botão da janela modal.*/
   modal.addEventListener("click", (e) => {
+    /*addEventListener - É para adicionar um evento dinâmicamente.*/
     /*Estrutura condicional IF e ELSE.*/
     if (e.target.id == "fechar" || e.target.id == "janela-modal") {
       modal.classList.remove("abrir");
