@@ -1,11 +1,14 @@
+/*Seletor da Variáveis.*/
 :root {
   --primary-color: #ccc;
   --second-color: #fff;
   --font-size-primary: "Poppins", sans-serif;
 } /*Definição de variáveis no css.*/
 
+/*Arquivo de importação da fonte.*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/*Seletor de configuração geral.*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +16,13 @@
   font-family: var(--font-size-primary);
 }
 
+/*Seletor do Corpo do Site.*/
 body {
   background-color: var(--primary-color);
   height: 1900px;
 }
+
+/*Seletor com Div de mensagem e a Div do botão.*/
 .cookies-msg {
   width: 80%;
   background-color: var(--second-color);
@@ -25,11 +31,42 @@ body {
   left: 50%;
   transform: translate(-50%);
   border-radius: 15px;
+  display: none;
 }
 
+/*Seletor para sempre que existir a classe mostra dentro da classe msg , vai aparecer a mensagem.*/
+.cookies-msg.mostrar {
+  display: block;
+}
+
+/*Seletor da Div de mensagem e da Div do Texto.*/
 .cookies-msg .cookies-txt {
   display: flex;
   align-items: center;
   text-align: justify;
   padding: 20px;
 }
+
+/*Seletor da Div de mensagem e da Div do botão.*/
+.cookies-msg .cookies-btn {
+  margin-left: 30px;
+}
+
+/*Seletor de Estilização do botão.*/
+.cookies-msg .cookies-btn button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700; /*Peso da fonte.*/
+  font-size: 18px; /*Tamanho da fonte.*/
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 0.2s; /*transição para não deixar o botão seco.*/
+  border-radius: 15px;
+}
+
+/*Seletor de hover do botão para sensação de afundamento do botão.*/
+.cookies-msg .cookies-btn button:hover {
+  transform: scale(0.9);
+}
+
+/*Para editar uma div ou elemento dentro de uma div que engloba outras div's. Primeiro chma a div principal até o nome da div ou elemento que você deseja estilizar.*/
